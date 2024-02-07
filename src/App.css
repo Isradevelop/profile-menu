@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'primary-font';
+  src: url(./fonts/Ubuntu-Regular.ttf) format('woff2');
+ }
+@font-face {
+  font-family: 'primary-font-bold';
+  src: url(./fonts/Ubuntu-Bold.ttf) format('woff2');
+ }
+@font-face {
+  font-family: 'primary-font-light';
+  src: url(./fonts/Ubuntu-Light.ttf) format('woff2');
+ }
+
+*{
+  font-family:primary-font;
+}
+
+body{
+  background-color: black;
+  padding-top: 50px;
+}
+
+.profile-menu-container{
+  display: flex;
+  flex-direction: column;
+  background-color: #1f1e1e;
+  width: 22%;
+  height: 600px;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.profile-button-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  height: 200px;
+  padding-top: 80px;
+  width: 100%;
+}
+
+.profile-button-container a{
+  text-decoration: none;
+}
+
+.profile-button{
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(58, 58, 58);
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  justify-content: center;
+}
+
+.text-button{
+  color: white;
+  line-height: 50px;
+  font-family: primary-font-bold;
+}
+
+.profile-button:hover{
+  background-color: hsl(75, 94%, 57%);
+  transition: background-color 0.2s linear 0.2s;
+  cursor: pointer;
+  .text-button{
+    color: black;
+    transition: color 0.2s linear 0.2s;
+  }
+}
+
+
+.info-title,
+.info-sub-title,
+.info-desc{
+  text-align: center;
+  height: 25px;
+  color: white;
+}
+
+.info-title{
+  font-family: primary-font-bold;
+  font-size:x-large;
+  margin-top: 5px;
+}
+
+.info-desc{
+  font-family: primary-font-light;
+  color: white;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.img-title{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.info-sub-title{
+  margin-top: 15px;
+  font-family: primary-font-light;
+  color:  hsl(75, 94%, 57%);;
+}
+
+.foto{
+  width: 85px;
+  height: 85px;
+  border-radius: 50px;
+}
+
+@media (max-width: 1104px){
+  .profile-menu-container{
+    width: 25%;
+  }
+  .info-title{
+    height: 50px;
+  }
+}
+
+@media (max-width: 800px){
+  .profile-menu-container{
+    width: 30%;
+  }
+}
+
+@media (max-width: 700px){
+  .profile-menu-container{
+    width: 40%;
+  }
+}
+
+@media (max-width: 500px){
+  .profile-menu-container{
+    width: 55%;
+  }
+}
+
+@media (max-width: 400px){
+  .profile-menu-container{
+    width: 55%;
+  }
+  .img-title{
+    margin-top: 0px;
+  }
+  .profile-menu-container{
+    padding-top: 15px;
+  }
+}

@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'primary-font';
+    src: url(./fonts/Ubuntu-Regular.ttf) format('woff2');
+   }
+  @font-face {
+    font-family: 'primary-font-bold';
+    src: url(./fonts/Ubuntu-Bold.ttf) format('woff2');
+   }
+  @font-face {
+    font-family: 'primary-font-light';
+    src: url(./fonts/Ubuntu-Light.ttf) format('woff2');
+   }
+  
+  *{
+    font-family:primary-font;
+    color: bisque;
+  }
+  
+  body{
+    background-color: black;
+    padding-top: 8%;
+    line-height: 100px;
+  }
+
+
+.profile-menu-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1e1e;
+    width: 25%;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.foto{
+    width: 85px;
+    height: 85px;
+    border-radius: 50px;
+    margin:  0 auto;
+}
+
+.profile-menu-container div{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+}
+
+
+.info-title{
+    margin-top: 25px;
+    font-family: primary-font-bold;
+    font-size: 20px;
+    text-align: center;
+    height: 25px;
+}
+
+.info-sub-title{
+    margin-top: -20px;
+    font-size: 14px;
+    color: hsl(75, 94%, 57%);
+}
+
+.info-desc{
+    margin-top: -10px;
+    font-size: 17px;
+}
+
